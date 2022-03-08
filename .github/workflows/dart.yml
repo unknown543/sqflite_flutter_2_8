@@ -5,7 +5,7 @@
 
 name: Dart
 
-on:[push]
+on: [push]
 
 jobs:
   build:
