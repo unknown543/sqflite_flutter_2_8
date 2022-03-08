@@ -14,3 +14,5 @@ jobs:
     
     steps:
       - run: echo "first ci cd"
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
