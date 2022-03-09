@@ -18,3 +18,5 @@ jobs:
           channel: 'stable'
       - run: flutter --version
       - run: flutter doctor
+      - run: flutter build apk
+      - run: flutter build appbundle
