@@ -19,7 +19,7 @@ jobs:
           channel: 'stable'
       - run: flutter build appbundle
       - name: release
-        uses: ncipollo/release-action@v2
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/bundle/release/app-release.aab"
           tag: ${{ steps.version.outputs.content }}
