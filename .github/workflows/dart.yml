@@ -8,11 +8,12 @@ name: Dart
 on: [push]
 
 jobs:
-  build:
+  flutter_test:
+    name: flutter test
     runs-on: ubuntu-latest
-
-    
     steps:
-      - run: echo "first ci cd"
       - uses: actions/checkout@v2
       - uses: actions/checkout@v1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: "11.x"
