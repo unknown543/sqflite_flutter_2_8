@@ -23,4 +23,5 @@ jobs:
         with:
           artifacts: "build/app/outputs/bundle/release/app-release.aab"
           tag: ${{ steps.version.outputs.content }}
+          token: ${{ secrets.test }}
           prerelease: false
