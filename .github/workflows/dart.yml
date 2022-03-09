@@ -6,7 +6,8 @@
 name: Dart
 
 on: [push]
-
+env:
+  VERSION: flutter --version
 jobs:
   flutter_test:
     name: flutter test
